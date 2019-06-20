@@ -1,0 +1,14 @@
+{
+  "name": "commodities-and-varieties",
+  "version": "1.0.0",
+  "description": "Configuration and helpers for commodities and varieties",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "ProducePay",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.11"
+  }
+}

@@ -51,4 +51,5 @@ module.exports = {
   itemFromUuids,
   nameFromUuids,
   commodityNameFromUuid,
+  sortedOptions: _.sortBy(commoditiesAndVarieties, 'label'),
 };

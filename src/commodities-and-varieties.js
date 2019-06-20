@@ -687,8 +687,7 @@ export default [{
   }, {
     name: 'Law Rome',
     uuid: '81f29639-3a07-4759-9f92-ab06bc640a51',
-  },
-  ],
+  }],
 }, {
   name: 'Carrots',
   uuid: 'fd0b726d-42e9-410b-bf0e-9704a226ee78',
@@ -710,20 +709,85 @@ export default [{
     uuid: '9498e70d-038f-4925-935a-5c6a6da5cad0',
   }],
 }, {
-  name: 'Green Beans',
-  uuid: '2c2ce764-8cb9-4ee0-9aac-ea1e16b536e1',
-  varietyUuid: '886dcf42-fb8d-4e33-ab54-2092815d7400',
-}, {
   name: 'Beans',
   uuid: '2c2ce764-8cb9-4ee0-9aac-ea1e16b536e1',
   varieties: [{
+    name: 'Variety Unspecified',
+    uuid: null,
+  }, {
     name: 'Haricot Vert (French Type)',
     uuid: '87cef7a4-6202-4f37-a5ee-585ca0926a21',
   }, {
     name: 'Kentucky Wonder Type',
     uuid: '9e0bc3d1-1ef9-4aa9-96d1-3147f0392f8d',
   }, {
+    name: 'Round Green Type',
+    uuid: '886dcf42-fb8d-4e33-ab54-2092815d7400',
+  }],
+}, {
+  name: 'Bananas',
+  uuid: '0f4cad08-8d14-4533-928c-603875e50cf2',
+  varieties: [],
+}, {
+  name: 'Kiwis',
+  uuid: '4e5e51e5-69ea-46ef-863c-633db6277792',
+  varietyUuid: '17572783-820c-4c23-bbac-759800854f09',
+  varieties: [],
+}, {
+  name: 'Grapefruits',
+  uuid: 'bf35360e-8eed-41cd-9860-71c5bf5069ad',
+  varieties: [{
     name: 'Variety Unspecified',
     uuid: null,
+  }, {
+    name: 'Flame',
+    uuid: 'e7c10877-b919-4c8a-a248-933e8551c640',
+  }, {
+    name: 'Marked Rio Star',
+    uuid: '96d9afe9-4020-49be-a6b0-4ffc66da454b',
+  }],
+}, {
+  name: 'Garlic',
+  uuid: 'd6fe5bab-f2b1-47cf-8dcb-ad3051717337',
+  varieties: [],
+}, {
+  name: 'Radishes',
+  uuid: 'd027dc97-0a99-48ce-bec7-a61f8b0305fc',
+  varieties: [{
+    name: 'Variety Unspecified',
+    uuid: null,
+  }, {
+    name: 'Red',
+    uuid: 'cf474047-cec2-44fa-ba86-3d9fe472555e',
+  }],
+}, {
+  name: 'Sweet Potatoes',
+  uuid: '700e8bd2-fbda-44bc-9ac8-391ccd4cfa75',
+  varieties: [{
+    name: 'Japanese Type',
+    uuid: 'c7fc360a-10f8-4dd6-ae18-b1b43f27abd1',
+  }, {
+    name: 'Orange Type',
+    uuid: '02176996-9bbd-482b-b313-9492dea28448',
+  }, {
+    name: 'Red Type',
+    uuid: 'affe5bbf-6b97-43c2-9482-405cf65208df',
+  }, {
+    name: 'White Type',
+    uuid: 'a09f1585-a25c-468c-8c0f-84f2cabb361b',
+  }]
+}, {
+  name: 'Mushrooms',
+  uuid: 'c270845c-7c1f-4739-a43e-2f542cc5ea81',
+  varieties: [],
+}, {
+  name: 'Parsley',
+  uuid: '4b6f997b-bdd3-472a-be3d-3c197e9158f6',
+  varieties: [{
+    name: 'Curly',
+    uuid: 'b4f5bba2-1a17-442d-852b-338a284f6dbb',
+  }, {
+    name: 'Plain',
+    uuid: '4c1f0d25-7b18-44a0-8fd5-f71807db74aa',
   }],
 }];

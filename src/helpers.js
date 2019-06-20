@@ -2,7 +2,7 @@ const _ = require('lodash');
 
 const commoditiesAndVarieties = require('./commodities-and-varieties');
 
-const sortedOptions = _.sortBy(commoditiesAndVarieties, 'label');
+const sortedOptions = _.sortBy(commoditiesAndVarieties, 'name');
 const pickerOptions = sortedOptions.map((opt) => ({ ...opt, label: opt.name, value: opt.uuid }));
 
 function createUuidKey(commodityUuid, varietyUuid) {

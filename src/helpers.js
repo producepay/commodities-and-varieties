@@ -1,12 +1,12 @@
-import _ from 'lodash';
+const _ = require('lodash');
 
-import commoditiesAndVarieties from './commodities-and-varieties';
+const commoditiesAndVarieties = require('./commodities-and-varieties');
 
 function createUuidKey(commodityUuid, varietyUuid) {
   return _.compact([commodityUuid, varietyUuid]).join(':');
 }
 
-export const commodityDropdownListOptions = _.orderBy(
+const commodityDropdownListOptions = _.orderBy(
   _.flatten(
     commoditiesAndVarieties.map(commodityObject => {
       const { name, uuid, varietyUuid, varieties } = commodityObject;
@@ -28,20 +28,27 @@ export const commodityDropdownListOptions = _.orderBy(
   'label',
 );
 
-export function itemFromUuids(commodityUuid, varietyUuid) {
+function itemFromUuids(commodityUuid, varietyUuid) {
   return _.find(commodityDropdownListOptions, {
     value: createUuidKey(commodityUuid, varietyUuid),
   });
 }
 
-export function nameFromUuids(commodityUuid, varietyUuid) {
+function nameFromUuids(commodityUuid, varietyUuid) {
   return _.get(itemFromUuids(commodityUuid, varietyUuid), 'label');
 }
 
-export function commodityNameFromUuid(commodityUuid, varietyUuid) {
+function commodityNameFromUuid(commodityUuid, varietyUuid) {
   const commodityOption = _.find(commoditiesAndVarieties, { uuid: commodityUuid });
   return (
     _.get(commodityOption, 'name') ||
     _.get(itemFromUuids(commodityUuid, varietyUuid), 'alias')
   );
 }
+
+module.exports = {
+  commodityDropdownListOptions,
+  itemFromUuids,
+  nameFromUuids,
+  commodityNameFromUuid,
+};

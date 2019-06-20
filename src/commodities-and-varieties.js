@@ -1,4 +1,4 @@
-export default [{
+module.exports = [{
   name: 'Avocados',
   uuid: 'eddd01d8-492e-477d-a7f8-6cdf5cbb42cf',
   varieties: [{
